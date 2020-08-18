@@ -780,7 +780,8 @@ blockquote p,
 }
 
 .article-breadcrumbs-season-header .disclaimer {
-    font-size: 12px;
+    font-size: 14px;
+    max-width: 60%;
 }
 
 .article-breadcrumbs-season-header p:first-child a,
