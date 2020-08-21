@@ -51,7 +51,6 @@ a:hover {
     min-width: 100%;
 }
 
-
 .archive.category h1,
 .page .post-wrap h1.entry-title {
     display: inline;
@@ -255,7 +254,6 @@ h6 a {
     padding: 0 0 2% 0;
 }
 
-
 /* BUTTONS */
 .read-more-button,
 .post-meta.vcard,
@@ -266,7 +264,6 @@ h6 a {
 a.et_pb_button {
     margin-bottom: 5%;
 }
-
 
 button[type="submit"].et_pb_contact_submit,
 button[type="submit"].et_pb_contact_submit:hover {
@@ -413,17 +410,6 @@ button[type="submit"].et_pb_contact_submit:hover {
 .side-card-columns.right .et_pb_text .et_pb_text_inner  {
     padding-right: 40px;
 }
-
-/* .cta.et_pb_cta_0.et_pb_promo {
-    background-image: none;
-    background-color: #9ddff9;
-    color: #000 !important;
-}
-
-.cta.et_pb_cta_0.et_pb_promo h2.et_pb_module_header {
-    color: #000 !important;
-} */
-
 
 /* IMAGE CARDS */
 
