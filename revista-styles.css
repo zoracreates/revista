@@ -1288,8 +1288,7 @@ a[data-featherlight="image"] img {
 }
 
 a[data-featherlight="image"] img:hover {
-    filter: brightness(0.8);
-    transform: scale(.98);
+    transform: scale(.99);
     border: 2px solid #A51C30 !important;
     cursor: zoom-in;
 }
@@ -1380,7 +1379,7 @@ a[data-featherlight="image"] img:hover {
     }
     .header.centered #et-navigation>ul>li>a {
         padding: 10px 15px 8px 15px !important;
-    font-size: .925rem;
+        font-size: 1.2rem;
         color: #414141;
         transition-duration: .5s;
     }
