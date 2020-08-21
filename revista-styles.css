@@ -6,7 +6,6 @@ html body {
     color: #515151;
 }
 
-
 .single .et_pb_row, .page .et_pb_row {
     width: 90%;
     max-width: 90%;
@@ -44,10 +43,6 @@ a:hover {
 .page #main-content,
 .search-results #main-content {
     margin-top: 30px;
-}
-
-.page.home #main-content {
-    margin-top: 0;
 }
 
 .search-results .with_sidebar .et_pb_extra_column_main {
