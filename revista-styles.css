@@ -56,7 +56,7 @@ a:hover {
     display: inline;
     text-transform: uppercase;
     font-size: 2.6em;
-    padding: 10px 8px 10px 8px;
+    padding: 50px 8px 50px 8px;
 }
 
 .archive.category h1:after,
@@ -255,6 +255,16 @@ h6 a {
 }
 
 /* BUTTONS */
+
+.more-articles-button.et_pb_row {
+    padding-top: 0px;
+    
+}
+
+.more-articles-button.et_pb_row + .side-card-columns.et_pb_row {
+    margin-top: 70px;
+}
+
 .read-more-button,
 .post-meta.vcard,
 .post-meta.vcard * {
@@ -431,39 +441,41 @@ button[type="submit"].et_pb_contact_submit:hover {
     margin-bottom: 10px;
 }
 
-.side-card-columns.et_clickable .et_pb_image_wrap img,
+/* .side-card-columns.et_clickable .et_pb_image_wrap img,
 .image-card.et_clickable  .et_pb_image_wrap img {
     transition-duration: .5s;
-}
+} */
 
-.side-card-columns.et_clickable:hover .et_pb_image_wrap img,
+/* .side-card-columns.et_clickable:hover .et_pb_image_wrap img,
 .image-card.et_clickable:hover .et_pb_image_wrap img {
     transform: scale(1.1);
-}
+} */
 
 .image-card .et_pb_blurb_description h2 {
     font-size: 1.5em;
     line-height: 1.2em;
 }
 
-.side-card-columns.et_clickable,
+/* .side-card-columns.et_clickable,
 .image-card.et_clickable,
 .et_pb_text.et_clickable .et_pb_text_inner {
     transition-duration: .5s;
-}
+} */
 
 .et_pb_text.et_clickable .et_pb_text_inner {
-    display: inline-block;
-    padding: 5px;
+    /* display: inline-block; */
+    padding: 5px 0px;
 }
 
-.et_pb_text.et_clickable .et_pb_text_inner:hover,
-.image-card.et_clickable:hover {
-    background: #f3f3f1;
+.editor-letter.et_clickable:hover h3,
+.image-card.et_clickable:hover h2,
+.image-card.et_clickable:hover h3,
+.image-card.et_clickable:hover h4 {
+    text-decoration: underline;
 }
 
 .image-card .et_pb_blurb_container {
-    padding: 5px;
+    padding: 5px 0px;
 }
 
 .side-card-columns .et_pb_text p:first-of-type,
@@ -763,16 +775,27 @@ blockquote p,
 
 /* TABLE OF CONTENTS*/
 .et_pb_post .entry-featured-image-url {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
+.two-columns_hero .et_pb_posts .et_pb_post {
+    margin-bottom: 11.5%;
+}
 .et_pb_ajax_pagination_container article {
-    position: relative;
+    /* position: relative; */
     transition-duration: .5s;
 }
 
-.et_pb_ajax_pagination_container article:hover {
-    background: #f3f3f1;
+.et_pb_ajax_pagination_container article h3,
+.et_pb_ajax_pagination_container article h4 {
+    margin-top: 10px;
+}
+
+.et_pb_ajax_pagination_container article .entry-featured-image-url:hover + h3,
+.et_pb_ajax_pagination_container article .et_pb_image_container:hover  + h4,
+.et_pb_ajax_pagination_container article h3:hover,
+.et_pb_ajax_pagination_container article h4:hover {
+    text-decoration: underline;
 }
 
 .et_pb_ajax_pagination_container .entry-featured-image-url {
@@ -789,25 +812,29 @@ blockquote p,
     padding: 0px
 }
 
-.et_pb_ajax_pagination_container article  .entry-featured-image-url img {
+/* .et_pb_ajax_pagination_container article  .entry-featured-image-url img {
     transition-duration: .5s;
 }
 
-.et_pb_ajax_pagination_container article:hover .entry-featured-image-url img {
+.et_pb_ajax_pagination_container article .entry-featured-image-url:hover img {
     transform: scale(1.1);
-}
+} */
 
 
 .et_pb_ajax_pagination_container h3.entry-title,
 .et_pb_ajax_pagination_container h4.entry-title {
-    padding: 5px 5px 10px 5px;
+    padding-bottom: 10px;
 }
 
 .et_pb_ajax_pagination_container .post-content {
-    padding: 0px 5px 5px 5px;
+    padding-bottom: 5px
 }
 
-.et_pb_ajax_pagination_container h3.entry-title a::after,
+.et_pb_ajax_pagination_container .post-meta {
+    padding: 5px 0px;
+}
+
+/* .et_pb_ajax_pagination_container h3.entry-title a::after,
 .et_pb_ajax_pagination_container h4.entry-title a::after  {
     position: absolute;
     content: '';
@@ -815,7 +842,7 @@ blockquote p,
     bottom: 0;
     left: 0;
     right: 0;
-}
+} */
 
 .et_pb_ajax_pagination_container h3.entry-title,
 .et_pb_ajax_pagination_container h4.entry-title  {
@@ -828,15 +855,61 @@ blockquote p,
     line-height: 1.2;
 }
 
-.et_pb_ajax_pagination_container .post-content i {
+.et_pb_ajax_pagination_container .post-content i,
+.excerpt.entry-summary i,
+.et_pb_ajax_pagination_container .post-meta [rel="tag"] {
     font-family: 'Montserrat' !important;
-color: #A51C30;
-font-weight: 800;
-font-size: .85em;
-text-transform: uppercase;
+    color: #A51C30;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
+.et_pb_ajax_pagination_container .post-content i,
+.excerpt.entry-summary i {
+    font-size: .85em;
+    font-style: italic;
+}
 
+.two-columns_hero .et_pb_ajax_pagination_container .post-content i {
+    font-size: .85rem;
+}
+
+.et_pb_ajax_pagination_container .post-meta a:hover {
+    text-decoration: underline;
+
+}
+
+.et_pb_ajax_pagination_container .post-content-inner i,
+.excerpt.entry-summary i {
+    color: #333;
+    text-transform: none;
+}
+
+.et_pb_post .post-meta {
+    font-size: 0px;
+    margin-bottom: 0px;
+}
+
+.et_pb_post .post-meta [rel="tag"]:first-child {
+    font-size: .96rem;
+    line-height: 1.5;
+}
+
+.two-columns_hero .et_pb_post .post-meta [rel="tag"]:first-child {
+    font-size: .85rem;
+}
+
+.et_pb_ajax_pagination_container .post-meta [rel="tag"] + [rel="tag"] {
+    display: none;
+    visibility: hidden;
+}
+
+/* Left Image cards */
+
+.et_pb_blurb_position_left .et_pb_main_blurb_image {
+    width: 30%;
+    padding-right: 2%
+}
 
 
 /* CAPTIONS */
@@ -1409,9 +1482,9 @@ a[data-featherlight="image"] img:hover {
         font-size: 12px;
     }
 
-    .two-columns_hero .et_pb_post .entry-featured-image-url {
-        margin-bottom: 5px;
-    }
+    /* .two-columns_hero .et_pb_post .entry-featured-image-url {
+        margin-bottom: 0px;
+    } */
 
     .two-columns_hero .et_pb_posts h3 {
         padding-bottom: 0px;
@@ -1422,7 +1495,7 @@ a[data-featherlight="image"] img:hover {
     }
     
     .two-columns_hero .et_pb_ajax_pagination_container .entry-featured-image-url {
-        max-height: 130px;
+        max-height: 100px;
     }
 
     .grid-list ul li {
@@ -1484,6 +1557,14 @@ a[data-featherlight="image"] img:hover {
     #main-header > .container  {
         margin-top: 20px;
         padding-bottom: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .admin-bar.et_fixed_nav .et-fixed-header #main-header {
+        top: -90px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,.3);
     }
 
 }
