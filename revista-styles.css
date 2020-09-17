@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 
 html body {
     font-family: 'Montserrat' !important;
     font-weight: 400;
-    color: #515151;
 }
 
 .single .et_pb_row, .page .et_pb_row {
@@ -58,7 +58,7 @@ a:hover {
     font-size: 2.6em;
     padding: 0px 8px 50px 8px;
     text-align: center;
-    color: #414141;
+    color: #414141 !important;
 }
 
 
@@ -590,6 +590,59 @@ ul.et_pb_tabs_controls {
     color: #fff !important;
 }
 
+/*ARTICLE FONTS*/
+
+.dcsbcm_divi_breadcrumbs_wrapper {
+    margin-bottom: 0px !important;
+}
+
+.dcsbcm_divi_breadcrumb {
+    color: #A51C30
+}
+
+
+.post-template-default article .article-breadcrumbs-season-header .dcsbcm_divi_breadcrumb {
+  font-size: 1rem;
+}
+
+.post-template-default article .article-breadcrumbs-season-header,
+.post-template-default article .et_pb_tabs_controls,
+.post-template-default article .main-section-header h2,
+.post-template-default article .et_pb_blog_grid,
+.post-template-default article .et_pb_blog_grid h3,
+.post-template-default article .et_pb_blog_grid h2,
+.post-template-default article .et_pb_blog_grid h3 a,
+.post-template-default article .et_pb_blog_grid h2 a,
+.post-template-default article .et_pb_blog_grid .post-content {
+    font-family: 'Montserrat' !important;
+}
+
+.post-template-default article,
+.post-template-default article h1,
+.post-template-default article h2,
+.post-template-default article h3,
+.post-template-default article h4,
+.post-template-default article h5,
+.post-template-default article h6, 
+.post-template-default article h1 a,
+.post-template-default article h2 a,
+.post-template-default article h3 a,
+.post-template-default article h4 a,
+.post-template-default article h5 a,
+.post-template-default article h6 a,
+.post-template-default article .wp-caption p.wp-caption-text,
+.post-template-default article .paragraph .et_pb_text_inner {
+    font-family: 'Spectral', serif !important;
+}
+
+.post-template-default article p {
+    font-size: 1.1em;
+}
+
+.post-template-default article .et_pb_blog_grid p {
+    font-size: 18px;
+}
+
 /* SIDE MENU */
 
 .side-menu ul {
@@ -652,12 +705,14 @@ ul.et_pb_tabs_controls {
 }
 
 .archive h2.post-title.entry-title a {
-    color: #000 !important;
+    color: #333 !important;
 }
 
 .archive .et_pb_extra_module {
     border-top: none;
 }
+
+
 
 
 /*filters*/
@@ -956,6 +1011,7 @@ blockquote p,
 
 .et_pb_post .post-meta {
     margin-bottom: 0px;
+    font-size: 0px;
 }
 
 .et_pb_post .post-meta [rel="tag"]:first-child {
@@ -1311,16 +1367,6 @@ figcaption {
     transition: none !important;
 }
 
-/* .et_pb_animation_top.et-animated {
-    -webkit-animation: none;
-    animation: none;
-}
-
-.paragraph.poem h2 {
-    font-weight: 800;
-} */
-
-
 /* show secondary menu on mobile*/
 
 ul.et_extra_mobile_menu li:nth-child(n+7),
@@ -1437,11 +1483,6 @@ ul.et_extra_mobile_menu li:nth-child(n+7),
     list-style: none;
     text-transform: uppercase;
 }
-
-/* .addthis_button_print,
-.addthis_button_printfriendly {
-    display: none;
-} */
 
 a[data-featherlight="image"] img {
  transition-duration: .5s;
