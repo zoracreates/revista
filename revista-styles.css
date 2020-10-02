@@ -901,6 +901,12 @@ blockquote p,
 }
 
 /* TABLE OF CONTENTS*/
+
+.toc .left-image-cards .et_pb_post .entry-featured-image-url {
+    max-height: 234px;
+}
+
+
 .et_pb_post .entry-featured-image-url {
     margin-bottom: 0px;
 }
@@ -1227,6 +1233,12 @@ figcaption {
 
 /* SEARCH RESULTS */
 
+.archive .featured-image,
+.search-results .featured-image {
+    overflow: hidden;
+    max-height: 200px;
+}
+
 .search-results .et_pb_extra_module {
     border-top: none;
     box-shadow: none;
@@ -1385,7 +1397,7 @@ figcaption {
 .archive-pagination>.page-numbers li>.page-numbers.current,
 .paginated .pagination li>.page-numbers.current,
 .paginated>.page-numbers li>.page-numbers.current {
-    background: #003663;
+    background: #A51C30;
 }
 
 .archive-pagination .pagination li a,
@@ -1411,6 +1423,13 @@ figcaption {
     outline: #2ea3f2 solid 2px;
     -webkit-transition: none !important;
     transition: none !important;
+}
+
+/*search*/
+
+.et_pb_extra_module {
+    box-shadow: none;
+    border-top: none;
 }
 
 /* show secondary menu on mobile*/
