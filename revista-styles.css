@@ -790,10 +790,6 @@ body.post-template-default .et_pb_blog_grid .entry-featured-image-url {
     padding: 0 0 0 8.5%;
 }
 
-.regular-article-paragraph {
-    padding: 0 30.5% 0 0%;
-}
-
 .paragraph-with-image p {
     padding-right: 22%;
 }
@@ -1454,6 +1450,9 @@ ul.et_extra_mobile_menu li:nth-child(n+7),
 @supports (display: grid) {
 
     @media (min-width: 981px) {
+        .regular-article-paragraph {
+            padding: 0 30.5% 0 0%;
+        }
         .left-image-cards:not(.vertical-images) .entry-featured-image-url {
             max-height: none;
         }
