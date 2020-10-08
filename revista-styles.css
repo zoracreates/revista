@@ -598,10 +598,18 @@ ul.et_pb_tabs_controls {
     margin-bottom: 0px !important;
 }
 
-.dcsbcm_divi_breadcrumb {
+.dcsbcm_divi_breadcrumb,
+p.et_pb_title_meta_container a.author {
     color: #A51C30
 }
 
+.photos-by p {
+    color: #666;
+}
+
+.post-template-default .et_pb_module.et_pb_post_title {
+    margin-bottom: 0px;
+}
 
 .post-template-default article .article-breadcrumbs-season-header .dcsbcm_divi_breadcrumb {
   font-size: 1rem;
@@ -1302,6 +1310,39 @@ figcaption {
     min-width: 200px;
     margin: 2%;
     flex-basis: 21%;
+}
+
+/* COVID SPOTLIGHT */
+.covid-months .cat-item:not(.cat-item-114),
+.cat-item-114 > a {
+    display: none;
+}
+.covid-months .cat-item.cat-item-114 .children .cat-item {
+    display: list-item;
+}
+
+.covid-months h4.et_pb_toggle_title {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #414141;
+}
+
+.covid-months .cat-item.cat-item-114 .children {
+    padding-left: 0px;
+}
+
+.covid-months li.categories ul,
+.covid-months li.categories {
+    list-style: none;
+}
+
+.covid-months.et_pb_toggle .cat-item a {
+    color: #A51C30
+}
+
+.covid-months .cat-item {
+    font-size: 15px;
 }
 
 
