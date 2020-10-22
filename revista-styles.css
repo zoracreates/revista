@@ -11,6 +11,10 @@ html body {
     max-width: 90%;
 }
 
+a, a:visited, .post-content a {
+    color: #A51C30;
+}
+
 a {
     font-weight: 700;
 }
@@ -264,7 +268,7 @@ h6 a {
 }
 
 .et_pb_row.photo-credit+.et_pb_row.article-breadcrumbs-season-header {
-    padding: 0 0 2% 0;
+    padding: 0px;
 }
 
 /* BUTTONS */
@@ -562,6 +566,31 @@ button[type="submit"].et_pb_contact_submit:hover {
     padding: 0px 20px 40px 45px;
 }
 
+/* STUDENT VIEWS */
+.student-view-article-bio .et_pb_toggle_title {
+    font-size: 1.25em;
+}
+.student-view-tag {
+    padding: 0px;
+}
+
+.student-view-tag .et_pb_text_inner a {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-family: 'Montserrat' !important;
+    background: #515151;
+    padding: 5px 7px;
+    font-size: 1rem;
+}
+
+.student-view-article-bio .et_pb_toggle_open {
+    padding: 12px;
+}
+
+.student-view-article-bio .et_pb_toggle.et_pb_module.et_pb_accordion_item.et_pb_toggle_open {
+    margin-bottom: 1.5%;
+}
+
 /* ARTICLE TABS*/
 .et_pb_tab {
     padding: 24px 0px 0px 0px;
@@ -629,8 +658,14 @@ p.et_pb_title_meta_container a.author {
 .post-template-default article .et_pb_blog_grid h2,
 .post-template-default article .et_pb_blog_grid h3 a,
 .post-template-default article .et_pb_blog_grid h2 a,
+.post-template-default article .et_pb_blog_grid .post-meta,
+.post-template-default article .et_pb_blog_grid .author,
 .post-template-default article .et_pb_blog_grid .post-content {
     font-family: 'Montserrat' !important;
+}
+
+.post-template-default article .et_pb_blog_grid .author {
+    color: #A51C30
 }
 
 .post-template-default article,
@@ -1175,7 +1210,7 @@ figcaption {
 }
 
 .et_pb_toggle_title:before {
-    color: #A51C30;
+    color: #444;
     font-size: .725em;
 }
 
@@ -1307,6 +1342,10 @@ figcaption {
     max-height: 200px;
 }
 
+.archive.category-book-reviews .featured-image {
+    max-height: none;
+}
+
 .search-results .et_pb_extra_module {
     border-top: none;
     box-shadow: none;
@@ -1396,15 +1435,19 @@ figcaption {
 }
 
 .covid-months li.categories ul,
-.covid-months li.categories {
+.covid-months li.categories,
+.covid-months li ul,
+.covid-months li {
     list-style: none;
 }
 
-.covid-months.et_pb_toggle .cat-item a {
-    color: #A51C30
+.covid-months.et_pb_toggle li a,
+.covid-months.et_pb_toggle li a:visited {
+    color: #A51C30 !important;
 }
 
-.covid-months .cat-item {
+.covid-months .cat-item,
+.covid-months .li {
     font-size: 15px;
 }
 
@@ -1428,9 +1471,51 @@ figcaption {
     font-size: 1em;
 }
 
+
+/* FILTER IMAGE CARDS */
+
+.filter-card .et_pb_blurb_description h3 {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.filter-card .et_pb_blurb_description {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+
+.filter-card .et_pb_blurb_container {
+    padding: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.filter-card .et_pb_blurb_content {
+    position: relative;
+}
+
+.filter-card.image-card .et_pb_main_blurb_image {
+    margin-bottom: 0px;
+    display: block;
+}
+
+
+
+
+
 /* TOPIC CATEGORIES */
 
-.topics-categories .et_pb_code_inner {
+/* .topics-categories .et_pb_code_inner {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -1492,7 +1577,7 @@ figcaption {
 
 .topics-categories .et_pb_code_inner a:nth-of-type(2) {
     transform: translateX(-8px);
-}
+} */
 
 .archive-pagination .pagination li>.page-numbers.current,
 .archive-pagination>.page-numbers li>.page-numbers.current,
