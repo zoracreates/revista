@@ -15,6 +15,49 @@ a, a:visited, .post-content a {
     color: #A51C30;
 }
 
+.post-template-default .et_pb_column.et_pb_column_1_4.et-last-child img {
+    max-width: 180px;
+}
+
+
+.post-template-default .et_pb_column.et_pb_column_1_4.et-last-child a[data-featherlight="image"] img:hover {
+    transform: none;
+    border: none !important;
+}
+
+
+a[rel*="category"]:last-child {
+    display: none;
+    visibility: hidden;
+} 
+
+.post-template-default .post-content.entry-content a:not([role="tab"]) {
+    color: #A51C30 !important;
+}
+
+#divi-blog-extra-archive a[rel*="category"]:last-child {
+    display: none;
+}
+
+#divi-blog-extra-archive a[rel*="category"] {
+    margin-right: 0px;
+    position: relative;
+}
+
+#divi-blog-extra-archive a[rel*="category"]:nth-last-child(2):after {
+    content: "";
+    background: #fff;
+    width: .5em;
+    height: .5em;
+    display: inline-block;
+    position: absolute;
+    z-index: 300;
+    top: 50%;
+    bottom: 0%;
+    right: 0;
+    left: 100%;
+}
+
 a {
     font-weight: 700;
 }
@@ -664,8 +707,41 @@ p.et_pb_title_meta_container a.author {
     font-family: 'Montserrat' !important;
 }
 
+.el-blog-pagination .page-numbers.current,
+.paginated .pagination li.active, .paginated > .page-numbers li.active, .archive-pagination .pagination li.active, .archive-pagination > .page-numbers li.active {
+    background-color: #A51C30;
+}
+
+.et_pb_bg_layout_light .et_pb_post .post-meta a,
 .post-template-default article .et_pb_blog_grid .author {
     color: #A51C30
+}
+
+.et_pb_pagebuilder_layout .post-content .entry-title a {
+    color: #333;
+}
+
+.et_pb_column_4_4 .et_pb_post_extra.el_dbe_full_width .post-content {
+    width: calc((100% - 10px)/ 2)
+}
+
+.et_pb_column_4_4 .et_pb_post_extra.el_dbe_full_width .post-media {
+    width: calc((100% - 400px)/ 2);
+}
+
+.archive.author .with_sidebar .et_pb_extra_column_main {
+    width: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    padding: 0;
+
+}
+
+.archive.author .with_sidebar .et_pb_extra_column_sidebar {
+    display: none !important;
 }
 
 .post-template-default article,
@@ -1342,8 +1418,10 @@ figcaption {
     max-height: 200px;
 }
 
+.author.archive .featured-image,
 .archive.category-book-reviews .featured-image {
-    max-height: none;
+    overflow: visible;
+    max-height: 100%;
 }
 
 .search-results .et_pb_extra_module {
