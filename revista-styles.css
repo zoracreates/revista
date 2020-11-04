@@ -35,6 +35,11 @@ a[rel*="category"]:last-child {
     color: #A51C30 !important;
 }
 
+
+.post-template-default .post-content.entry-content .student-view-tag a {
+    color: #fff!important;
+}
+
 #divi-blog-extra-archive a[rel*="category"]:last-child {
     display: none;
 }
@@ -388,6 +393,78 @@ button[type="submit"].et_pb_contact_submit:hover {
     text-align: center;
     width: 200px;
 }
+
+/*current issue articles - home */
+
+.hp-current-issue .et_pb_post_extra.el_dbe_full_width.no_date .post-media {
+    width: 100%;
+    max-height: 364px;
+    margin-right: 0px;
+}
+
+.hp-current-issue .post-content .post-data {
+    font-size: 0px;
+}
+
+.page .post-content .hp-current-issue article {
+    padding: 0px;
+}
+
+.hp-current-issue .post-content .post-data i {
+    font-size: .85rem;
+    font-style: italic;
+    color: #333;
+    font-weight: 800;
+}
+
+.hp-current-issue .entry-title {
+    line-height: 1;
+}
+
+.hp-current-issue .entry-title a {
+    font-size: .725em;
+}
+
+.hp-current-issue .entry-title a:hover {
+   text-decoration: underline;
+}
+
+.hp-current-issue .et_pb_post_extra .post-media img {
+    -o-object-position: top !important;
+    object-position: top !important;
+}
+
+.main-section-header.small-header h2::before {
+    display: none;
+}
+
+.hp-current-issue .et_pb_post_extra .post-media a.entry-featured-image-url {
+    position: static !important;
+    height: auto !important;
+    margin: 0px;
+}
+
+.hp-current-issue .et_pb_post_extra.el_dbe_full_width.no_date .post-content {
+    width: 100%;
+    padding: 0px;
+}
+
+.hp-current-issue .el-dbe-blog-extra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.hp-current-issue .el-dbe-blog-extra article {
+    display: flex;
+    flex-direction: column;
+}
+
+.et_pb_post_extra.el_dbe_full_width {
+    border-bottom: none;
+}
+
 
 /* two column section */
 .two-column-section {
@@ -1492,6 +1569,8 @@ figcaption {
     flex-basis: 21%;
 }
 
+
+
 /* COVID SPOTLIGHT */
 .covid-months .cat-item:not(.cat-item-114),
 .cat-item-114 > a {
@@ -1529,6 +1608,46 @@ figcaption {
     font-size: 15px;
 }
 
+.covid-button.et_pb_button,
+.covid-button.et_pb_button:hover,
+a.covid-button.et_pb_button:visited {
+    background-color: #A51C30;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.archive #custom_html-2 {
+    display: none
+}
+
+#text-3 li a {
+    color: #A51C30;
+}
+
+.archive[class*="category-covid-"] #custom_html-2 {
+    display: block
+}
+
+.archive[class*="category-covid-"] #text-2 {
+    display: none;
+}
+
+#custom_html-2 li {
+    padding-left: 0px;
+    border-bottom: none;
+}
+
+
+
+#text-3 .textwidget {
+    padding: 0px;
+}
+
+#wmd-sidebars-covid-months {
+
+}
 
 /* BOOK REVIEWS */
 
@@ -1868,6 +1987,14 @@ a[data-featherlight="image"] img:hover {
 }
 
 @media only screen and (min-width: 768px) {
+    .hp-current-issue .el-dbe-blog-extra article {
+        flex-basis: 45%;
+        margin-bottom: 5%;
+    }
+
+    .hp-current-issue .et_pb_post_extra.el_dbe_full_width.no_date .post-media {
+        max-height: 194px;
+    }
 
     #et-secondary-menu a:hover,
     #et-secondary-menu a {
@@ -1953,13 +2080,28 @@ a[data-featherlight="image"] img:hover {
 
 }
 
+/* spotlight_hero et_pb_blurb et_pb_main_blurb_image,
+issue_hero,
+two-columns_hero, {
+    margin-bottom: 0px;
+} */
+
 @media (min-width: 981px) {
+
+    .hp-current-issue .el-dbe-blog-extra article {
+        flex-basis: 29.5%;
+        margin-bottom: 0%;
+    }
 
     .two-columns_hero .et_pb_blurb_container,
     .issue_hero .et_pb_blurb_container  {
         padding: 40px !important;
     }
 
+    .main-section-header.small-header h2 {
+        padding-top: 0px;
+        font-size: 1.125rem;
+    }
 
     .page .two-columns_hero .et_pb_blurb_container h1,
     .two-columns_hero .et_pb_blurb_container h2,
@@ -2025,6 +2167,10 @@ a[data-featherlight="image"] img:hover {
 
     .grid-list ul li {
         flex-basis: 33%;
+    }
+
+    #et-info .et-top-search .et-search-field {
+        width: 200px;
     }
 
     @-moz-document url-prefix() {
@@ -2115,12 +2261,12 @@ a[data-featherlight="image"] img:hover {
     }
 }
 
-@media only screen and (max-width: 880px) {
+/* @media only screen and (max-width: 880px) {
     .two-columns_hero .et_pb_blurb_container,
     .issue_hero .et_pb_blurb_container {
         position: relative;
     }
-}
+} */
 
 @media only screen and (max-width: 981px) {
     .side-card-columns.left,
