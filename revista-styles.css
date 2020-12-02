@@ -11,7 +11,9 @@ html body {
     max-width: 90%;
 }
 
-a, a:visited, .post-content a {
+a, a:visited, .post-content a,
+.et_pb_pagebuilder_layout .et_pb_toggle_content li a,
+.et_pb_pagebuilder_layout .et_pb_toggle_content li a:visited  {
     color: #A51C30;
 }
 
@@ -503,6 +505,12 @@ button[type="submit"].et_pb_contact_submit:hover {
     background-color: #6E7687;
     color: #fff;
 }
+
+.et_pb_row.side-card-columns p {
+    padding-bottom: 10px;
+}
+
+
 .et_pb_row.side-card-columns a,
 .et_pb_row.side-card-columns a:visited {
     color: #fff !important;
